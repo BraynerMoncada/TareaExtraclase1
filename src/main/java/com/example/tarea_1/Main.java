@@ -12,12 +12,11 @@ public class Main extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("main.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 800, 600);
+        Scene scene = new Scene(fxmlLoader.load(), 900, 400);
         stage.setTitle("CSV Reading");
         stage.setScene(scene);
         stage.show();
     }
-
     public static void main(String[] args) { launch();
 
         /**
@@ -25,6 +24,7 @@ public class Main extends Application {
          */
         EstudianteTipoA estudiante = new EstudianteTipoA(2021011317, "Brayner Moncada Abellan", "moncada@estudiante.cr", 87886540, "MoonShoot", "TipoA", 65.3, 26.3, 15.3, 60.5, 96.3, 54.1);
         estudiante.mostrarDatos();
+
 
         //Crear estudiante tipo B
         //estudianteTipoB estudiante2 = new EstudianteTipoB(2021011317, "Brayner Moncada Abellan", "moncada@estudiante.cr", 87886540, "MoonShoot", "TipoB", 65.3, 26.3, 15.3, 60.5, 96.3, 54.1);
