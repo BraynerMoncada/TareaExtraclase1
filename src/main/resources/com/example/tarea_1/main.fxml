@@ -4,11 +4,43 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox alignment="TOP_RIGHT" prefHeight="365.0" prefWidth="714.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.2-ea" fx:controller="com.example.tarea_1.Controller">
+<VBox alignment="TOP_RIGHT" prefHeight="423.0" prefWidth="913.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tarea_1.Controller">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
-   <Button mnemonicParsing="false" text="Abrir CSV" />
-
-    <Label fx:id="welcomeText" />
+   <MenuBar prefHeight="26.0" prefWidth="130.0">
+     <menus>
+       <Menu mnemonicParsing="false" text="File">
+         <items>
+           <MenuItem mnemonicParsing="false" text="Close" />
+         </items>
+       </Menu>
+       <Menu mnemonicParsing="false" text="Edit">
+         <items>
+           <MenuItem mnemonicParsing="false" text="Delete" />
+         </items>
+       </Menu>
+       <Menu mnemonicParsing="false" text="Help">
+         <items>
+           <MenuItem mnemonicParsing="false" text="About" />
+         </items>
+       </Menu>
+     </menus>
+   </MenuBar>
+   <TableView prefHeight="340.0" prefWidth="833.0">
+     <columns>
+       <TableColumn prefWidth="58.19997787475586" text="Carnet" />
+       <TableColumn prefWidth="74.20001220703125" text="Nombre" />
+         <TableColumn prefWidth="66.80001831054688" text="Correo" />
+         <TableColumn prefWidth="81.60003662109375" text="Telefono" />
+         <TableColumn prefWidth="69.79998779296875" text="Nickname" />
+         <TableColumn prefWidth="72.20001220703125" text="T.Estudiante" />
+         <TableColumn prefWidth="78.79998779296875" text="NotaPE" />
+         <TableColumn prefWidth="68.0" text="NotaPQ" />
+         <TableColumn prefWidth="68.4000244140625" text="NotaPT" />
+         <TableColumn prefWidth="71.5999755859375" text="P1" />
+         <TableColumn prefWidth="72.5999755859375" text="P2" />
+         <TableColumn prefWidth="92.199951171875" text="P3" />
+     </columns>
+   </TableView>
 </VBox>
